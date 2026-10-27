@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="BajonBurgerClub.AccesoDatos/BajonBurgerClub.AccesoDatos.csproj" />
+  <Project Path="BajonBurgerClub.LogicaAplicacion/BajonBurgerClub.LogicaAplicacion.csproj" />
+  <Project Path="BajonBurgerClub.LogicaNegocio/BajonBurgerClub.LogicaNegocio.csproj" />
+  <Project Path="BajonBurgerClub.Tests/BajonBurgerClub.Tests.csproj" />
+  <Project Path="BajonBurgerClub.WebApp/BajonBurgerClub.WebApp.csproj" />
+</Solution>

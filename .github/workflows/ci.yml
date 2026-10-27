@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-y-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restaurar paquetes
+        run: dotnet restore BajonBurgerClub.slnx
+
+      - name: Compilar
+        run: dotnet build BajonBurgerClub.slnx --no-restore --configuration Release
+
+      - name: Correr tests
+        run: dotnet test BajonBurgerClub.slnx --no-build --configuration Release
